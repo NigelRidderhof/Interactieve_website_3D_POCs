@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.startScreen {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.startText {
+    color: white;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 2rem;
+}
