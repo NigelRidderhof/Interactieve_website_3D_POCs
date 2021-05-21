@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link rel="shortcut icon" href="#">
+    <meta charset="utf-8">
+    <title>RAF Conductive Wall </title>
+    <link rel="stylesheet" type="text/css" href="./style.css">
+</head>
+<body>
+  
+  <div class="startScreen"> <!-- Het startscherm dat nodig is omdat een gebruiker eerst een interactie moet uitvoeren voordat audio mag spelen. -->
+    <div class="startText">RAF MUSEUM <br> CONDUCTIVE WALL</div>
+  </div>
+
+  <video id="video"> <!-- Het onzichtbare video element nodig voor de projectie animatie. -->
+    <source src="../assets/phone_animation_transparent.webm" type="video/webm">
+  </video>
+
+  <script src="./startScreen.js" type="module"></script>
+  <script src="../modules/tweenjs.min.js"></script> <!-- Animatie / tweening library van CreateJS gebruikt voor de camera perspectief animaties. -->
+  <script src="../modules/CSSPlugin.js"></script> <!-- CSS plugin van CreateJS gebruikt om het startscherm smooth uit te faden. -->
+  <script src="./main.js" type="module"></script>
+</body>
+</html>

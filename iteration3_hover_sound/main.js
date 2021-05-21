@@ -2,13 +2,9 @@ import * as THREE from '../modules/three.module.js';
 import { OrbitControls } from '../modules/OrbitControls.js';
 import { GLTFLoader } from '../modules/GLTFLoader.js';
 
-let container, scene, camera, renderer, controls, loader, raycaster, intersected;
+let container, scene, camera, renderer, controls, loader, raycaster, intersected, sound;
 
 const pointer = new THREE.Vector2();
-
-let sound;
-var context = new AudioContext();
-
 
 init();
 animate();
@@ -102,9 +98,6 @@ function render() {
             intersected.material.transparent = true;
             intersected.material.opacity = 0.3;
             
-            context.resume().then(() => {
-                console.log('Playback resumed successfully');
-            });
             sound.isPlaying = false;
             sound.play();
         }

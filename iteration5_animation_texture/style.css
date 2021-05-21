@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Het startscherm. */
+.startScreen {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    background-color: black;
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+    user-select:none;
+}
+.startText {
+    color: white;
+    font-family: monospace;
+    font-weight: 700;
+    font-size: 2rem;
+}
+
+/* ThreeJS canvas. */
+canvas {
+    cursor: pointer;
+}
+
+/* Het onzichtbare video element nodig voor de projectie animatie. */
+#video {
+    display: none;
+}
