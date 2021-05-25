@@ -8,12 +8,16 @@ function startTheScreen() {
     createjs.CSSPlugin.install();
     startScreen.style.opacity = 1;
     createjs.Tween.get(startScreen).to( { opacity: 0 }, 800 );
-    setTimeout( function(){ startScreen.parentNode.removeChild ( startScreen ); }, 800 );
+    setTimeout( () => { 
+        startScreen.parentNode.removeChild ( startScreen ); 
+    }, 800 );
     
     // Start en pauseer de video zodat deze meteen zichtbaar is.
     const video = document.getElementById( 'video' );
     video.play();
-    setTimeout( function(){ video.pause(); }, 250 ); 
+    setTimeout( () => { 
+        video.pause(); 
+    }, 250 ); 
 
     console.clear();
 }
