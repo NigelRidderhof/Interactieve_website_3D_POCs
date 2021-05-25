@@ -4,7 +4,7 @@ Inbegrepen zijn de 5 iteraties voor een interactieve website met 3D onderdelen e
 
 De belangrijkste gebruikte tool is [Three.js](https://threejs.org/). Een lichte cross-browser 3D JavaScript library dat een abstractie is gebouwd op WebGL.
 
-Door te klikken en te slepen kun je de steeds 3D scene draaien. Door te scrollen kun je in- en uitzoomen. Bij iteratie 1 kun je nog “pannen” en dus de scene verplaatsen middels rechtermuisklik en slepen.
+Door te klikken en te slepen kun je steeds de 3D scene draaien. Door te scrollen kun je in- en uitzoomen. Bij iteratie 1 kun je nog “pannen” en dus de scene in je scherm verplaatsen middels rechtermuisklik en slepen.
 
 #### Inhoud mappen: 
 - [assets](/assets): Bestanden voor de 3D modellen, audio en video. 
